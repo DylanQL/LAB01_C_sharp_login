@@ -10,11 +10,11 @@
         <StackPanel Margin="60" VerticalAlignment="Center">
             <TextBlock Text="Menú Principal" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,40"/>
             
-            <Button x:Name="btnOperaciones" Content="Operaciones" Height="65" Margin="0,15,0,15" Background="#2ECC71" Foreground="White" FontSize="20"/>
+            <Button x:Name="btnOperaciones" Content="Operaciones" Height="65" Margin="0,15,0,15" Background="#2ECC71" Foreground="White" FontSize="20" Click="BtnOperaciones_Click"/>
             
-            <Button x:Name="btnMantenimientos" Content="Mantenimientos" Height="65" Margin="0,15,0,15" Background="#3498DB" Foreground="White" FontSize="20"/>
+            <Button x:Name="btnMantenimientos" Content="Mantenimientos" Height="65" Margin="0,15,0,15" Background="#3498DB" Foreground="White" FontSize="20" Click="BtnMantenimientos_Click"/>
             
-            <Button x:Name="btnReportes" Content="Reportes" Height="65" Margin="0,15,0,15" Background="#9B59B6" Foreground="White" FontSize="20"/>
+            <Button x:Name="btnReportes" Content="Reportes" Height="65" Margin="0,15,0,15" Background="#9B59B6" Foreground="White" FontSize="20" Click="BtnReportes_Click"/>
             
             <Button x:Name="btnCerrarSesion" Content="Cerrar Sesión" Height="50" Margin="0,40,0,0" Background="#E74C3C" Foreground="White" FontSize="18" Click="BtnCerrarSesion_Click"/>
         </StackPanel>
