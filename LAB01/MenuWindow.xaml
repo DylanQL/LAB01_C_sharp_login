@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAB01"
         mc:Ignorable="d"
-        Title="Menú Principal" Height="550" Width="750" WindowStartupLocation="CenterScreen">
+        Title="Menú Principal" Height="700" Width="950" WindowStartupLocation="CenterScreen">
     <Grid Background="#F0F0F0">
         <StackPanel Margin="60" VerticalAlignment="Center">
             <TextBlock Text="Menú Principal" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,40"/>
