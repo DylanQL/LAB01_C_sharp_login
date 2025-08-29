@@ -1,0 +1,36 @@
+<Window x:Class="LAB01.ListaConductoresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB01"
+        mc:Ignorable="d"
+        Title="Lista de Conductores" Height="650" Width="850" WindowStartupLocation="CenterScreen">
+    <Grid Background="#F0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Título -->
+        <TextBlock Grid.Row="0" Text="Lista de Conductores" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,30,0,20"/>
+        
+        <!-- Lista de Conductores -->
+        <DataGrid Grid.Row="1" x:Name="dgConductores" Margin="40,10" AutoGenerateColumns="False" IsReadOnly="True" 
+                  CanUserAddRows="False" CanUserDeleteRows="False" HeadersVisibility="Column" 
+                  AlternatingRowBackground="#F5F5F5" RowBackground="White" BorderBrush="#CCCCCC" BorderThickness="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre del Conductor" Binding="{Binding Nombre}" Width="*"/>
+                <DataGridTextColumn Header="Licencia" Binding="{Binding Licencia}" Width="*"/>
+                <DataGridTextColumn Header="Transporte" Binding="{Binding Transporte}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <!-- Botones -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,40">
+            <Button x:Name="btnNuevoConductor" Content="Nuevo Conductor" Width="200" Height="50" Background="#3498DB" Foreground="White" FontSize="18" Margin="0,0,20,0" Click="BtnNuevoConductor_Click"/>
+            <Button x:Name="btnVolver" Content="Volver" Width="150" Height="50" Background="#E74C3C" Foreground="White" FontSize="18" Margin="20,0,0,0" Click="BtnVolver_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -10,7 +10,7 @@
         <StackPanel Margin="60" VerticalAlignment="Center">
             <TextBlock Text="Mantenimientos" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,40"/>
             
-            <Button x:Name="btnConductores" Content="Conductores" Height="65" Margin="0,15,0,15" Background="#3498DB" Foreground="White" FontSize="20"/>
+            <Button x:Name="btnConductores" Content="Conductores" Height="65" Margin="0,15,0,15" Background="#3498DB" Foreground="White" FontSize="20" Click="BtnConductores_Click"/>
             
             <Button x:Name="btnTransportistas" Content="Transportistas" Height="65" Margin="0,15,0,15" Background="#3498DB" Foreground="White" FontSize="20"/>
             
